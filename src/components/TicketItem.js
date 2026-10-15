@@ -18,7 +18,7 @@ export default function TicketItem({ticket, dispatch}) {
         <button
           className="button"
           onClick={() => 
-            dispatch({ type: "DELETE_TICKET", payload: id })}
+            dispatch({ type: "DELETE_TICKET", payload: {id} })}
         >
           Delete
         </button>
